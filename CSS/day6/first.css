@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+}
+
+
+h1{
+    background-color: blueviolet;
+    position: fixed; 
+    width: 100%;
+
+}
+main{
+    padding-top: 60px;
+    /* padding use kiye hai taaki content neeche shift ho jaye */
+    /* margin top nhi kiye kyuki uski actual length suru se start ho rhi thi */
+}
+
+
+
+
+

@@ -1,0 +1,24 @@
+h1{
+    color:azure;
+    background-color: aqua;
+}
+h2{
+    color:bisque;
+    background-color: darkorange;
+
+}
+ul{
+    background-color: aqua;
+}
+/* Agar teeno mein class commmon aaya to direct usko cahnge krenge to wo hoga */
+
+
+/* Select by class name */
+/* You need to apply dot(.) first */
+
+.second{
+    background-color:blue;
+}
+/* Id ke hisab se bhi background change hoga  */
+/* uske liye hme use krna hoga # */
+/*  */

@@ -1,0 +1,37 @@
+.box{
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    background-color: blueviolet;
+
+}
+
+.container{
+    background-color: brown;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.box1{
+    background-color: rgb(3, 126, 85);
+    position: relative;
+    z-index: 7;
+    left: 25px;
+}
+.box2{
+    background-color: chartreuse;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    z-index: 2;
+}
+/* default z index wo hota hai auto */
+
+.box3{
+    background-color: chocolate;
+    /* z-index: 10; by default static hota hai to isspar z index kaam nhi krta hai*/
+    position: relative;
+    z-index: 5;
+}
+.box4{
+    background-color: crimson;
+}

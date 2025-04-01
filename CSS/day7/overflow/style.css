@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+}
+
+
+div{
+    height: 500px;
+    width: 400px;
+    background-color: blueviolet;
+    overflow: scroll;
+}
+/* by defulat overflow is visible */
+/* vissible (default) */
+/* hidden */
+/* scroll */
+/* auto */

@@ -1,0 +1,39 @@
+.first{
+    /* display: inline; */
+    background-color: blueviolet;
+    height: 10vw;
+    width: 10vw;
+    margin: 40px;
+}
+.second{
+    /* display: inline; */
+    background-color: brown;
+    height: 10vw;
+    width: 10vw;
+    margin: 40px;
+}
+/* block elemnent 
+height,width,margin de sakte hai*/
+
+span{
+    /* display: block; */
+    display: inline-block;
+    background-color: blanchedalmond;
+    height: 10vw;
+    width: 10vw;
+    margin: 40px;
+}
+/* Inline element 
+height,width, margin nhi de sakte hai */
+
+/* Element hga wo behave karenge  jjaise hi inline lekin 
+usmein hum hein height width dono use kr skte hai*/
+
+
+
+
+
+
+
+
+

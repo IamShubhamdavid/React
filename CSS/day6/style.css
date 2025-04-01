@@ -1,0 +1,46 @@
+.container{
+    background-color: rgb(17, 128, 161);
+    margin-left:200px ;
+    margin-top: 150px;
+    /* position: relative; */
+    height: 900px;
+}
+
+.newcontainer{
+    height: 800px;
+    background-color: coral;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+
+}
+
+.box1{
+    background-color: brown;
+}
+.box2{
+    background-color:greenyellow;
+    position: sticky; 
+     top: 10px;
+    left: 10px; 
+    /* z-index: -1; */
+}
+/* top,bottom, left, right*/
+/* static mein koi bhi change nhi hota hai */
+/* relative mein agr kisi ka postion chnge krna hai to krte hai*/
+/* absolute mein koi bhi kisi ka bhi postion le skta hai */
+/* fixed meinjo bhi postion hoga wo viewport(vw) ke basis pr hoga*/
+/* sticky jis parent element mein present rhjega wo musi mein present rhega*/
+
+.box3{
+    background-color: rgb(165, 42, 124);
+}
+.box4{
+    background-color: rgb(96, 11, 213);
+}
+
+
+
+

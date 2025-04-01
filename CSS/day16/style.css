@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.conatiner{
+    background-color:yellow ;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Box{
+    height: 200px;
+    width: 200px;
+    background-color: chartreuse;
+    font-size: 4rem;
+    border: 5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+}
+.Box:hover{
+    /* transform: translate(400px,-300px); */
+    /* transform: scale(2,4); */
+    /* transform: rotate(360deg); */
+    /* transform: skew(60deg); */
+    /* transform: translate(200px,300px) scale(2) rotate(60deg); */
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+
+}
+/* .Box2:hover{ */
+    /* transform: translate(400px,-300px); */
+    /* transform: scale(2,4); */
+    /* transform: rotate(360deg); */
+    /* transform: skew(60deg); */
+    /* transform: translate(200px,300px) scale(2) rotate(60deg); */
+    /* transform: rotate(45deg);
+    transform-origin: bottom right;
+} */
+
+/* single translate: X axis */
+/* double value in translate :X axis,Y axis */
+/* X-axis: positive: right,else left */
+/* Y-axis: positive: bottom,else top */
+/* these all are showing the direction in which it moves */
+
+/* scale single value, it will scale by x */
+/* scale 2 values x and y, it will increase width by x time and y time */
+
+/* rotate the box: postive value :clockwise else anticlockwise */
+
+/* skew se hmlog tilted kr skte h*/
+
+
+

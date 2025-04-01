@@ -1,0 +1,31 @@
+h1{
+    background-color: aqua;
+    border-width: 20px;
+    width: 400px;
+    border-style: solid;
+    border-color: brown;
+    border-radius: 20px;
+    margin: 20px 30px 50px 60px;
+    /* width: 300px;   */
+    /* 50 vw */
+}
+ul{
+    background-color: blueviolet;
+}
+
+/* when we have 2 option for border width
+it will be allocated to top and bottom ,right and left */
+/* clockwise direction mein chlta hai top ,right,bottom,left*/
+p{
+    background-color: crimson;
+    border-width: 3px;
+    border-color: blueviolet;
+    border-style: dashed;
+    padding: 10px 20px 30px 40px;
+    /* margin: 50px; */
+
+    /* margin left margin right */
+
+    /* padding beech mein ka space hota hai border aur content jaha se likha hua hai box ke andar mein */
+
+}

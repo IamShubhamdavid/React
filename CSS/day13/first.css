@@ -1,0 +1,41 @@
+.container{
+    height: 800px;
+    width: 800px;
+    background-color: deeppink;
+    padding: 10px;  
+     /*margin collapse se bachne ke liye hmklog padding use krte hai  */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+    
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: yellow;
+    margin: 10px;
+    transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+
+/* short hand notation */
+.box:hover{
+    background-color: purple;
+    width: 1000px;
+}
+
+
+
+
+/* box-shadow: 5px 10px;  horizonatal and vertical is added*/
+    /* box-shadow: 5px 10px rgb(0, 128, 255);  color is added*/
+     /*box-shadow: 5px 10px 4px rgb(0, 128, 255); isme blurr is also added */
+     /* box-shadow: 5px 10px 4px 30px rgb(0, 128, 255); isme spread radius is added */
+    /* box-shadow: inset 0px 0px 5px 10px chocolate; */
+
+    /* box shadow mein pehla repressnt krtya hai
+     horizontaL and dusra vertical 
+     aur negative dene par left aur up ke tarah kaam krta h*/
+

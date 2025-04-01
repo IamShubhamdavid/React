@@ -1,0 +1,36 @@
+h1{
+    background-color: chocolate !important;
+}
+/* element tag */
+
+/* #first_id{
+    background-color: aquamarine;
+}
+/* ID use */
+
+/* .first_class{
+    background-color: chartreuse;
+} */
+/* class */
+
+/* h1[draggable="true"]{
+    background-color: brown;
+} */
+/* attribute selector */
+
+/* body h1{
+    background-color: black;
+} */
+/* Descendent */
+
+/* body >h1{
+    background-color: azure;
+} */ 
+/* child */
+
+
+/* id ki sabse jyda priority hai uske baad classs ki then h1 */
+
+/* agr h1 use krke change krenge toh jo baaad mein aayega uske priority jyda rhegi */
+
+/* pehle id, attribute selector, first class, descendent aur child ki priority same hoti hai lekin decide krti hai kon pehle neeche aaayega  */

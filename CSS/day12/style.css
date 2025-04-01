@@ -1,0 +1,51 @@
+.container{
+    background-color: darkorange;
+    /* height: 500px;
+    width: 400px; */
+    display: flex;
+}
+/* general css mein destop ke likhi */
+.box{
+    height: 350px;
+    width: 350px;
+    color: rgb(225, 185, 7);
+    background-color: aqua;
+    margin: 10px;
+}
+
+
+/* Mobile phone */
+@media(max-width:600px){
+.container{
+    flex-direction: column;
+    }
+}
+
+/* max width 900px,600px min tablet */
+
+@media(min-width:601px) and (max-width:900px)
+{
+    .container{
+        
+    }
+}
+
+.container{
+
+}
+
+@media(min-width:901px){
+    
+}
+
+
+
+/* @media(max-width:500px)
+{
+    .container{
+        background-color: aqua;
+        height: 200px;
+        width: 200px;
+    }
+} */
+

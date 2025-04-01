@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+    background-color: aqua;
+    flex-direction: row;
+    height: 1000px; 
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+}
+
+/* flex item
+ order it decides the order of element*/
+ /* default order is 0 */
+
+
+.box1{
+    background-color:red ;
+    /* order: 10; */
+    /* align-self: flex-start; */
+}
+
+.box2{
+    background-color:blue ;
+    /* flex-grow: 1; */
+    /* width: 600px;
+    flex-shrink: 2; */
+     /* flex-basis: 200px;  */
+/* flex basis main axis ke side value ko increase kr deta hai */
+}
+
+.box3{
+    background-color:green ;
+    /* order: -1; */
+    /* align-self: flex-end; */
+    flex:2 2 200px ;
+}
+
+.box4{
+    background-color:yellow ;
+}
+
+/* desktop */
+
+/* tablet */
+
+/* mobile */
+

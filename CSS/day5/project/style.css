@@ -1,0 +1,26 @@
+body{
+    background-color: white;
+}
+*{
+    margin: 0;
+}
+
+.first,.third{
+    display: inline-block;
+    background-color: red;
+    width: 25vw;
+    height: 40vh;
+}
+.second,.fourth{
+    display: inline-block;
+    background-color: red;
+    width: 60vw;
+    height: 40vh;
+}
+.second,.fourth{
+    margin-left: 15vw;
+}
+.third,.fourth{
+    margin-top: 20vh;
+}
+

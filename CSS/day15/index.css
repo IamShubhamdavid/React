@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body{
+    width: 100vw;
+    height: 100vh;
+ }
+.container{
+    height: 100%;
+    gap: 1rem;
+    background-color: black;
+    padding: 4rem;
+    display: grid;
+    justify-content: center;
+    /* grid-template-columns: repeat(4,1fr);  iss time ye responsive nhi tha*/
+    /* grid-template-columns: minmax(100px,200px) minmax(100px,200px) minmax(100px,200px) minmax(100px,200px); */
+    /* aab ye responsive ho gya hai */
+
+    /* grid-template-columns: repeat(auto-fit,minmax(100px,200px)); */
+
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    /* justify-content: center;
+    align-items: center; */
+    place-items: center;
+    /* align itrems justify content    
+    agr single value hogi tb dono ke liye valid hogi nhi to 
+    pehla align hoga aur dusra justify  */
+}
+
+/* Auto-fill auto-fit */
+
+.Box{
+    height: 100px;
+    width: 100px;
+    background-color: yellowgreen;
+    font-size: 4rem;
+    color: black;
+}
+/* agra kisi individual ke andar hmko change krna hoga tb 
+justify self and align self use krenge  */
+
+/* vertical align items ke sath aur horizontal justify ke sath */

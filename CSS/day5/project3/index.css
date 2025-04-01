@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+}
+
+.first{
+    background-color:orange;
+    height:33vh ;
+    width:200vh ;
+}
+.second{
+    background-color:green ;
+    height:33vh ;
+    width:200vh ;
+    margin-top:34vh;
+}
+

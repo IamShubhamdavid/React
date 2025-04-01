@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    padding: 4rem;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(137, 133, 133);
+    display: flex;
+    align-items: center;
+}
+.Box{
+    height: 200px;
+    width: 200px;
+    background-color:deeppink;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name:movement ;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    /* animation-delay: 3s; */
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    position: relative;
+    border-radius: 50%;
+}
+
+/* @keyframes movement { */
+    /* inital position */
+    /* from{ */
+        /* top: 0px;
+        left: 0px; */
+        /* transform: translate(0vw,0vh); */
+    /* } */
+    /* final position */
+    /* to{ */
+        /* top: 0px;
+        left: 1000px; */
+        /* transform: translate(80vw,50vh); */
+        /* agar sirf y axis ya phir x axis pr move krna hai toh
+        hmlog translate X ya translate y use kr skte h */
+    /* }
+} */
+
+@keyframes movement {
+    0%{
+        transform: translate(0vw,0vh);
+    }
+    25%{
+        transform: translate(30vw,-30vh);
+    }
+    50%{
+        transform: translate(60vw,0vh);
+    }
+    75%{
+        transform: translate(30vw,30vh);
+    }
+    100%{
+        transform: translate(0vw,0vh);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+

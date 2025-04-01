@@ -1,0 +1,45 @@
+/* h1{
+    background-color: aqua;
+    color: deeppink;
+    text-align: center;
+} */
+
+/* text align :left,right,center,justify */
+/* text align :justify is used to give the proper right to left spacing */
+
+/* .container{
+    text-align: center;
+    background-color: aquamarine;
+} */
+
+/* p{
+    background-color: deeppink;
+     text-align-last: justify; 
+} */
+/* text align last */
+
+/* h1{
+    direction: rtl;
+     unicode-bidi: bidi-override; 
+} */
+ h1{
+    /* text-decoration-line: line-through; for cuttin the words in line*/
+    /* text-decoration-line:overline underline ;
+    text-decoration-style: dotted; */
+    /* text-transform: uppercase; */
+     
+ }
+span{
+    /* vertical-align: sub;/ super */
+}
+p{
+    text-indent: 50px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    text-shadow: 4px 4px;
+}
+
+
+
+
+

@@ -1,0 +1,55 @@
+.container{
+    background-color: aqua;
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content:center ; */
+    /* justify-content: space-around/space-evenly; */
+     /* align-items: baseline; */
+    /* flex-wrap:wrap; */
+    /* justify-content: center;
+    align-items: center; */
+    
+ } 
+
+/* flex direction will identify my main axis */
+/* row: horizontal is main axis */
+/* column: vertical is main axis */
+/* crossaxis is opposite */
+/* justify content it will around main axis */
+/* align item works around cross axis */
+/* align content ko axis ke liye mano */
+
+.box{
+    height: 150px;
+    width: 150px;
+    border: 5px solid black;
+    margin: 5px;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+/* .first{
+    font-size: 50px;  
+}
+
+.second{
+     font-size: 25px; 
+} */
+
+
+.box1{
+    background-color:red ;
+}
+
+.box2{
+    background-color:blue ;
+}
+
+.box3{
+    background-color:green ;
+}
+
+.box4{
+    background-color:yellow ;
+}

@@ -1,0 +1,39 @@
+h1{
+    color:rgb(235, 8, 156);
+    background-color: chartreuse;
+}
+
+/* name ke sath */
+h2{
+    /* color: chocolate; */
+    color: #b12755;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+/* rem relative font  */
+
+/* Pixel size is determined by your device */
+/* em , relative to parent font size */
+/* rem , relative to HTML font size */
+/* % relative to parent font size */
+
+/* fps frame per second */
+
+
+body{
+    background-color: darkmagenta;
+}
+/* change by rgb */
+/* 0-255 */
+/* /hexadecimal value ko use krna by using #hexadecimal no only 6 character */
+
+/* h1{
+    color: hsl(hue, saturation, lightness);
+}    ek aur method haio change krne ka */  
+    /* hue value leta hai upto 360 and baaki do upto 100% */
+
+    /* ek aur use hota hai RGBA usme A means alpha and uska value 0 to 1 hota hai  */
+
+
+
+    /* pixel ki length device ke according hoti hai  */
