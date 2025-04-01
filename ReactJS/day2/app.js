@@ -17,6 +17,10 @@ root.render(div1);
 //     <h2>Maja aaya mujhe</h2>
 // </div> */}
 
+//Optimize code mein comment hata do, space hata do
+// kuch code aisa likha hoga, jo mien use nhi kr rha 
+// react and react-dom(kuch portion use kr rha hun) 
+
 // {/* <div>
 //     <div>
 //         <h1>
@@ -26,4 +30,7 @@ root.render(div1);
 // </div> */}
 
 // JSX 
+
+// Bundler:
+// Webpack, vite, parcel
 
