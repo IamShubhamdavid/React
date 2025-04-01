@@ -34,3 +34,9 @@ root.render(div1);
 // Bundler:
 // Webpack, vite, parcel
 
+//NPM: Node package manager
+
+//parcel: sab idhar rkha hu
+//typescript:
+//react:
+//reactdom:
