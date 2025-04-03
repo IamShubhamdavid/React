@@ -1,0 +1,23 @@
+{
+  "name": "reactbasic",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IamShubhamdavid/React.git#main"
+  },
+  "author": "Shubham kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IamShubhamdavid/React/issues"
+  },
+  "homepage": "https://github.com/IamShubhamdavid/React/tree/main#readme",
+  "description": "",
+  "dependencies": {
+    "parcel": "^2.14.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
