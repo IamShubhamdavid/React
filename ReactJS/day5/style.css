@@ -45,4 +45,9 @@ body{
     background-color: rgb(54, 121, 54);
     color: white;
 }
+button{
+    height: 50px;
+    background-color: orange;
+
+}
 
