@@ -6,7 +6,7 @@ function Body(){
     const [numberofProfile,setnumberofProfile]=useState("");
 
     async function generateProfile(count){
-        const ran=Math.floor(1+Math.random()*1000);
+        const ran=Math.floor(1+Math.random()*100000);
         const response= await fetch(`https://api.github.com/users?since=${ran}per_page=${count}`);
         const data= await response.json();
 
