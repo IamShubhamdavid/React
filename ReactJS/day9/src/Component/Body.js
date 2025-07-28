@@ -1,22 +1,12 @@
 import {useEffect,useState} from "react";
+import useFetch from "../../useFetch";
 
 function Body(){
 
-    const [Profile,setProfile]=useState([]);
-    const [numberofProfile,setnumberofProfile]=useState("");
+    const {generateProfile,numberofProfile,setnumberofProfile,Profile}=useFetch();
 
-    async function generateProfile(count){
-        const ran=Math.floor(1+Math.random()*100000);
-        const response= await fetch(`https://api.github.com/users?since=${ran}per_page=${count}`);
-        const data= await response.json();
-
-        setProfile(data);
-    }
-
-    useEffect(()=>{
-        generateProfile(10);
-    },[])
-
+    // usefetch bolta hia ki code ka main part alag likh lo
+    // custom hook mein pehle body part render hoga uske baad useFetch function render hoga
     return(
         <div className="but">
             <input type="text" className="inpu" placeholder="search here" value={numberofProfile} onChange={(e)=>setnumberofProfile(e.target.value)}></input>
