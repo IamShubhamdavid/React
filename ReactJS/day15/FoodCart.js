@@ -10,11 +10,11 @@ export default function FoodCart({value}){
 
     function handleClick(){
         if(inCart){
-            dispatchEvent(removeItems());
+            dispatch(removeItems());
             setInCart(false);
         }
         else{
-            dispatchEvent(addItems());
+            dispatch(addItems());
             setInCart(true);
         }
     }

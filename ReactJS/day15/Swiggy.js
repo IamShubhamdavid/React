@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import Header from "./Header";
 import Card from "./Card";
 import { Provider } from "react-redux";
-import store from "./store";
+import stores from "./Stores";
 
 
 function App(){
@@ -12,7 +12,7 @@ function App(){
     //console.log(reactslicer);
 
     return(
-        <Provider store={store}>
+        <Provider store={stores}>
 
             <Header></Header>
             <Card></Card>

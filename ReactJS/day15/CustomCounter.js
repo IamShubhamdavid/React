@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useDispatch } from "react-redux"
-import { Decrement,Increment,CustomIncreaser} from "react-redux"
+import { Decrement,Increment,CustomIncreaser} from "./Slice1";
 
 
 export default function CustomCounter(){
@@ -20,7 +20,5 @@ export default function CustomCounter(){
         <button onClick={handleClick}>Submit</button>
         
         </>
-
-
     )
 }

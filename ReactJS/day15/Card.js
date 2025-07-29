@@ -3,39 +3,38 @@ import FoodCart from "./FoodCart";
 
 const FoodItems = [
     {id:1,food:'Pizza',Price:"200"},
-    {id:2,food:'Pizza',Price:"200"},
-    {id:3,food:'Pizza',Price:"200"},
-    {id:4,food:'Pizza',Price:"200"},
-    {id:5,food:'Pizza',Price:"200"},
-    {id:6,food:'Pizza',Price:"200"},
-    {id:7,food:'Pizza',Price:"200"},
+    {id:2,food:'Pasta',Price:"200"},
+    {id:3,food:'Momos',Price:"200"},
+    {id:4,food:'kebab',Price:"200"},
+    {id:5,food:'paneer chilly',Price:"200"},
+    {id:6,food:'Tikka paneer',Price:"200"},
+    {id:7,food:'Rice',Price:"200"},
 
 ];
 
 
 export default function Card(){
 
-        const [inCart,setInCart]=useState(false);
-        function handClick(){
-            if(inCart){
-                setInCart(false);
-            }
-            else{
-                setInCart(true);
-            }
-        }
+        // const [inCart,setInCart]=useState(false);
+        // function handClick(){
+        //     if(inCart){
+        //         setInCart(false);
+        //     }
+        //     else{
+        //         setInCart(true);
+        //     }
+        // }
 
         return(
 
-            <div style={{display:"flex",justifyContent:"center", flexWrap:"wrap",gap:"2px"}}>
+            <div style={{display:"flex", justifyContent:"center", flexWrap:"wrap",gap:"20px"}}>
                 {FoodItems.map((value)=>{
                     return(
                         <div key={value.id}>
-                        <FoodCart value={value}></FoodCart>
+                            <FoodCart value={value}></FoodCart>
                         </div>
                     )
                 })}
             </div>
         )
-
-}
+    }
