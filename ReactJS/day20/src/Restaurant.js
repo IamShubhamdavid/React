@@ -29,7 +29,7 @@ export default function Restaurant(){
         // return <h1 className="h-full font-black text-7xl">Data is loading........</h1>
 
     return(
-        <div className="flex flex-wrap w-[80%] mx-auto mt-20 gap-5">
+        <div className="flex flex-wrap w-[90%] mx-auto mt-20 gap-5">
             {
                 RestData.map((restInfo)=><RestCard key={restInfo?.info?.id} restInfo={restInfo}></RestCard>)
             }

@@ -1,10 +1,10 @@
 import { useState } from "react"
 import RestInfo from "./RestInfo"
 
-export default function MenuCard({menuItems}){
+export default function MenuCard({menuItems,foodselected}){
 
     const [isOpen, setIsOpen] = useState(true);
-    
+    console.log("Menu items: "+menuItems)
     if("categories" in menuItems){
         return(
             <div className="w-full">

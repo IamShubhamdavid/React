@@ -20,16 +20,16 @@ export default function RestaurantMenu(){
             const swiggyAPI=`https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.7040592&lng=77.10249019999999&restaurantId=${id}`;
             const response= await fetch(proxyServer+swiggyAPI);
             const data=await response.json();
-            const tempData = data?.data?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
-            const filterData = tempData.filter((items)=> 'title' in items?.card?.card)
-            
+            const tempData = data?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
+            const filterData = tempData?.filter((items)=> 'title' in items?.card?.card)
+            // console.log(filterData)
             setRestData(filterData);
 
         }
         fetchData();
     },[])
 
-     console.log(RestData);
+    //  console.log(RestData);
 
     return(
         <div>
@@ -46,7 +46,8 @@ export default function RestaurantMenu(){
        
         <div className="w-[80%] mx-auto mt-20">
           {
-            RestData.map((menuItems)=><MenuCard key={menuItems?.card?.card?.title} menuItems={menuItems?.card?.card} foodselected={selected}></MenuCard>)
+            
+            RestData?.map((menuItems)=><MenuCard key={menuItems?.card?.card?.title} menuItems={menuItems?.card?.card} foodselected={selected}></MenuCard>)
           }
         </div>
         </div>
