@@ -14,7 +14,7 @@ export default function RestCard({restInfo}){
                 xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 20 20"
              >
-                <path d="M10 15l-5.878 3.09 1.122-6.545L.487 6.91l6.564-.955L10 0l2.949 5.955 6.564.955-4.757 4.635 1.122 6.545z" />
+                <path d="M9.049 2.927c.3-.645 1.605-.645 1.905 0l1.525 3.78 4.173.605c.738.107 1.035 1.012.5 1.534l-3.016 2.942.712 4.15c.127.74-.651 1.299-1.305.95l-3.726-1.962-3.726 1.962c-.654.35-1.432-.21-1.305-.95l.712-4.15-3.016-2.942c-.535-.522-.238-1.427.5-1.534l4.173-.605L9.049 2.927z" />
             </svg>
         <span className="text-lg">{restInfo?.info?.avgRating}</span>
         <span className="text-lg">{restInfo?.info?.sla?.slaString}</span>
