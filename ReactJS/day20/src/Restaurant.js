@@ -9,7 +9,6 @@ export default function Restaurant(){
 
     useEffect(()=>{
 
-
         async function fetchData(){
 
             const proxyServer="https://cors-anywhere.herokuapp.com/"
