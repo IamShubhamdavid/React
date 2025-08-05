@@ -39,9 +39,13 @@ app.get("/food",(req,res)=>{
 // Request handler multiple likh skte hai
 app.post("/admin",Auth,(req,res)=>{
 
+        try{
         FoodMenu.push(req.body);
         res.status(201).send("Item added Suceesfully");
-
+        }
+        catch(err){
+            req.send(err);
+        }
 })
 
 app.delete("/admin/:id",Auth,(req,res)=>{
@@ -77,6 +81,61 @@ app.patch("/admin",Auth, (req,res)=>{
         }
         else{
             res.send("Not Exist");
+        }
+    })
+
+    app.post("/user/:id",(req,res)=>{
+        const id=parseInt(req.params.id);
+
+        const foodItem=FoodMenu.find(item=>item.id===id);
+        if(foodItem){
+            AddToCart.push(foodItem);
+            res.status(200).send("Item added succesfully");
+        }
+        else{
+            res.send("Item out of Stack");
+        }
+
+    })
+
+    app.delete("/user/:id",(req,res)=>{
+
+        try{
+        const id=parseInt(req.params.id);
+
+       const index= AddToCart.findIndex(item=>item.id===id);
+
+       if(index!=1){
+        AddToCart.splice(index,1);
+        res.send("Item removed successfully");
+       }
+       else{
+        res.send("Item is not present in cart");
+       }}
+       catch(err){
+        res.send("Some error:"+err);
+       }
+    })
+
+    app.get("/user",(req,res)=>{
+
+        if(AddToCart.length==0)
+            res.send("Cart is empty")
+        else
+            res.send(AddToCart);
+    })
+
+
+    app.get("/dummy",(req,res)=>{
+
+        try{
+        //JSON.parse({"name":"Rohit"});
+        //JSON.parse("Invalid json");
+        throw new Error ('Broken')
+        res.send("Hello coder");
+        }
+        catch(err){
+            res.send("Some eroor Occurred"+err);
         }
     })
 
