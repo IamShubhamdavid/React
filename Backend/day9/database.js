@@ -32,5 +32,32 @@ ACID property:  Atomicity Consistency Isolation Durability
 Aur B ko A ke baare mein pata nhi hona chahiye means Interfere nhi hona chahiye
 --> Durability bolta hai ki kisi bhi halat mein mera Database nhi delete hona chahiye
 
+SQL database ka disadvantage ye hai ki in future jb hm apne app mein kuch changes laate hai to wo usme hme data manually add  krna padta h 
+jo ki bhut jyda time le leti hai
+
+Primary key which is unique in database from which we can be identified
+
+Vertical scaling means usi device ki capacity ko increase kr rha hun
+Vertical mein time bhi bahut kaam lagega
+
+Horizontal scaling means aab new device mein data ko store karayenge
+Horizontal mein time bhi bhut jyda lagega 
+
+Load Balancer kaam krne ke liye Distributed databse use krte hai
+
+-->** Sharding = Data ko multiple place pr store krana hai called Sharding
+Replica create krna 
+
+Distributed Database --> Single server 
+
+**CAP theorem --> 
+--> Consistency means teeno server mein same data dhukhna chahiye
+--> Availability means jruri nhi hai ki mere passs latest information prsent ho , uss time jo 
+bhi indformatioon prsent rahega wahi print ho jayega (eg:Error)
+--> Partition tolerance --> ki jab hmra server toot jaye and is generally non negotiable
+
+Yaa to CP chlega nhi to AP chlega
+
+MongoDB is actually NoSQL Not only sequence
 
 */
