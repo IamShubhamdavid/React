@@ -37,15 +37,15 @@ jo ki bhut jyda time le leti hai
 
 Primary key which is unique in database from which we can be identified
 
-Vertical scaling means usi device ki capacity ko increase kr rha hun
+--> Vertical scaling means usi device ki capacity ko increase kr rha hun
 Vertical mein time bhi bahut kaam lagega
 
-Horizontal scaling means aab new device mein data ko store karayenge
+--> Horizontal scaling means aab new device mein data ko store karayenge
 Horizontal mein time bhi bhut jyda lagega 
 
-Load Balancer kaam krne ke liye Distributed databse use krte hai
+Load Balancer kaam krne ke liye Distributed database use krte hai
 
--->** Sharding = Data ko multiple place pr store krana hai called Sharding
+-->** Sharding = Data ko multiple place pr store and divide  krana hai called Sharding
 Replica create krna 
 
 Distributed Database --> Single server 
@@ -58,6 +58,6 @@ bhi indformatioon prsent rahega wahi print ho jayega (eg:Error)
 
 Yaa to CP chlega nhi to AP chlega
 
-MongoDB is actually NoSQL Not only sequence
-
+MongoDB is actually NoSQL Not only sequence. and.  Ye BSON(Binary javascript Object Notation) ke format mein hota h ye date bhi store krta h
+--> MongoDB basically Block Read: 4 kb.   and B++ tree is better than AVL tree and jo actual data hoga wahi point krega database mein
 */
