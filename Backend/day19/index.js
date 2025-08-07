@@ -1,0 +1,103 @@
+const express = require("express");
+const app = express();
+const main = require("./database");
+const User = require("./Models/user")
+const ValidateUser=require("./utils/ValidateUser");
+const bcrypt= require("bcrypt");
+
+// Hmlog API ko call isliye krte hai taaki hmein baaar baar pure mein change nhi krna pde
+app.use(express.json());
+
+app.post("/register",async (req,res)=>{
+
+    try{
+        
+        ValidateUser(req.body);
+
+        req.body.password= await bcrypt.hash(req.body.password,10);
+
+       await User.create(req.body);
+       res.send("User Registered Successfully");
+
+    }
+    catch(err){
+        res.send("Error"+err.message);
+    }
+})
+
+app.post("/login",async(req,res)=>{
+    try{
+        // validate krna
+
+        const people= await User.findById(req.body.id);
+        if(!(req.body.emailId===people.emailId))
+            throw new Error("Invalid credentials");
+
+        const IsAllowed = await bcrypt.compare(req.body.password,people.password);
+        if(!IsAllowed)
+            throw new Error("Invalid crendtials");
+
+        res.send("Login Successfully");
+
+    }
+    catch(err){
+        res.send("Error"+err.message);
+    }
+})
+
+app.get("/info",async(req,res)=>{
+
+    try{
+        const result=await User.find();
+        res.send(result);
+    }
+    catch(err){
+        res.send("Error"+err.message);
+
+    }
+})
+
+app.get("/user/:id", async(req,res)=>{
+    try{
+        // code likhna padega, user ko authenticate kar paun
+        
+
+        const result = await User.findById(req.params.id);
+        res.send(result);
+    }
+    catch(err){
+        res.send("Error"+err.message);
+    }
+})
+
+app.delete("/user/:id",async(req,res)=>{
+    try{
+        await User.findByIdAndDelete(req.params.id);
+        res.send("Deleted Successfully");
+    }
+    catch(err){
+        res.send("Error"+err.message);
+    }
+})
+
+app.patch("/user",async(req,res)=>{
+    try{
+        const{id,...update}=req.body;
+        await User.findByIdAndUpdate(id,update,{"runValidators":true});
+        res.send("Updated Successfully");
+    }
+    catch(err){
+        res.send("Error"+err.message);
+    }
+})
+
+
+
+main()
+.then(async ()=>{
+    console.log("Connected to DB")
+    app.listen(3000, ()=>{
+        console.log("Listening at port 3000");
+    })
+})
+.catch((err)=>console.log(err));
