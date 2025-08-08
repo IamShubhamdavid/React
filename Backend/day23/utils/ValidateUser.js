@@ -1,6 +1,6 @@
 const validator=require("validator");
 
-function validUser(data){
+function ValidateUser(data){
 // Validate kya uske andar firstName
 // req.body ke andar data aaya hai, usmein first_name present hona chahiye
     const mandatoryField=["firstName","emailId","age","password"]
@@ -23,4 +23,4 @@ function validUser(data){
         //firstname>3 max<20
 
 };
-module.exports=validUser;
+module.exports=ValidateUser;

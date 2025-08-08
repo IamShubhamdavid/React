@@ -1,8 +1,10 @@
-const express= require("express");
+const express = require("express");
 
-const authRouter=express.Router();
-const bcrypt=require("bcrypt");
-const User= require("../Models/user")
+const authRouter = express.Router();
+const bcrypt = require("bcrypt");
+const User = require("../Models/user");
+
+// /auth/register
 
 authRouter.post("/register", async (req,res)=>{
 
@@ -21,6 +23,8 @@ authRouter.post("/register", async (req,res)=>{
         res.send("Error "+ err.message);
     }
 })
+
+
 
 authRouter.post("/login", async(req,res)=>{
 
@@ -45,11 +49,25 @@ authRouter.post("/login", async(req,res)=>{
 
         res.cookie("token",token);
         res.send("Login Successfully");
-
     }
     catch(err){
         res.send("Error: "+err.message);
     }
 })
 
-module.exports= authRouter
+
+// /auth/logout
+
+authRouter.post("/logout", async(req,res)=>{
+
+    try{
+
+       res.cookie("token",null,{expires: new Date(Date.now())});
+       res.send("Logged Out Succesfully");
+    }
+    catch(err){
+        res.send("Error: "+err.message);
+    }
+})
+
+module.exports = authRouter
